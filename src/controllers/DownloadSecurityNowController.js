@@ -73,6 +73,7 @@ class DownloadSecurityNowEpisodeController {
                     console.error(`\t\tURL type 1: ${this.pdfURL}`);
                     console.error(`\t\tURL type 2: ${this.pdfURL_alt1}`);
                     console.error(`\t\tDestination: ${this.pdfPath}`);
+                    console.error(`\t\tThis might be because it was a "best of" episode with no show notes e.g. #954`)
                 }
             }
         } catch (error) {
