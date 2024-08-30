@@ -4,10 +4,12 @@
   "description": "Download the security now podcast episodes and show notes",
   "main": "start.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node start.js"
   },
   "author": "Brenton O'Callaghan (callaghan001)",
   "license": "GPL-3.0-only",
+  "repository": "https://github.com/bocallaghan/security-now-podcast-downloader",
   "dependencies": {
     "axios": "^1.7.5",
     "console-stamp": "^3.1.2"
