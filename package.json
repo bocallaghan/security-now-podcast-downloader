@@ -9,7 +9,6 @@
   "author": "Brenton O'Callaghan (callaghan001)",
   "license": "GPL-3.0-only",
   "dependencies": {
-    "async": "^3.2.6",
     "axios": "^1.7.5",
     "console-stamp": "^3.1.2"
   }

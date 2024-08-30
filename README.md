@@ -1,6 +1,6 @@
 # Security Now Episode and Show note downloader
 
-This script is designed to allow for the easy downloading and archiving of the Security Now podcast episode library and show notes from grc<dot>com website. Please note that the purpose of this script is purely fair use and in line with the spirit of the Security Now community and should not be used to abuse / redistribute the content but rather facilitate the use of the downloaded files for personal purposes only.
+This script is designed to allow for the easy downloading and archiving of the Security Now podcast episode library and show notes from grc[dot]com website. Please note that the purpose of this script is purely fair use and in line with the spirit of the Security Now community and should not be used to abuse / redistribute the content but rather facilitate the use of the downloaded files for personal purposes only.
 
 ## Usage
 
@@ -56,6 +56,13 @@ The output should look something like this:
 [30.08.2024 13:08.18.063] [INFO]  Downloading of Security Now episodes from #1 to #20 is completed.
 
 ```
+
+## Included packages
+
+I don't believe in including random external libraries without good reason, so that is why I always include a list of those libraries and a justification for its inclusion.
+
+* axios - common web request library to simplify interaction with remote web addresses [https://axios-http.com/]
+* console-stamp - pretty prints the console output with a timestamp and allows for log level setting
 
 ## Warranties and/or Mis-use
 The author of this code disclaims any liability for damages or losses resulting from its use. The code is provided “as-is” without any warranties, either express or implied, including but not limited to the implied warranties of merchantability and fitness for a particular purpose. Users assume full responsibility for any consequences arising from its use or misuse.

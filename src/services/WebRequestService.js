@@ -1,4 +1,3 @@
-const { all } = require('async');
 const axios = require('axios');
 
 /**
