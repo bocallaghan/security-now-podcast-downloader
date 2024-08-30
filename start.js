@@ -15,7 +15,7 @@ require('console-stamp')(console, {
 });
 
 console.info("########################################################");
-console.info("Security Now Episode and Shownotes downloader");
+console.info("Security Now Episode and Show notes downloader");
 console.info("Author: Brenton O'Callaghan (callaghan001)");
 console.info("version " + require(path.join(process.cwd(),'package.json')).version);
 console.info("########################################################");
@@ -28,14 +28,14 @@ console.info("########################################################");
  */
 async function main(working_directory, startingEpisodeNumber, endingEpisodeNumber){
 
-    console.info(`Starting download of SecurityNow episodes from #${startingEpisodeNumber} to #${endingEpisodeNumber}...`);
+    console.info(`Starting download of Security Now episodes from #${startingEpisodeNumber} to #${endingEpisodeNumber}...`);
     for (let episodeNumber = startingEpisodeNumber; episodeNumber <= endingEpisodeNumber; episodeNumber++) {
         
         var downloader = new DownloadSecurityNowController(working_directory, episodeNumber);
         await downloader.download();
         console.info(`\t\tEpisode #${episodeNumber} processed`);
     }
-    console.info(`Downloading of SecurityNow episodes from #${startingEpisodeNumber} to #${endingEpisodeNumber} is completed.`);
+    console.info(`Downloading of Security Now episodes from #${startingEpisodeNumber} to #${endingEpisodeNumber} is completed.`);
     process.exit(0);
 }
 

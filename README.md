@@ -1,8 +1,6 @@
-# Security Now (Twit) Episode and Shownote downloader
+# Security Now Episode and Show note downloader
 
-This script is designed to allow for the easy downloading and archiving of the SecurityNow podcast Edpisode library and shownotes from grc<dot>com website. Please note that the purpose of this script is purely fair use and in line with the spirit of the SecurityNow community and should not be used to abuse / redistribute the content but rather facilitate the use of the downloaded files for personal purposes only.
-
-The author of this code disclaims any liability for damages or losses resulting from its use. The code is provided “as-is” without any warranties, either express or implied, including but not limited to the implied warranties of merchantability and fitness for a particular purpose. Users assume full responsibility for any consequences arising from its use or misuse.
+This script is designed to allow for the easy downloading and archiving of the Security Now podcast episode library and show notes from grc<dot>com website. Please note that the purpose of this script is purely fair use and in line with the spirit of the Security Now community and should not be used to abuse / redistribute the content but rather facilitate the use of the downloaded files for personal purposes only.
 
 ## Usage
 
@@ -30,11 +28,11 @@ The output should look something like this:
 ```
 % node start.js ~/SecurityNow 1 20                                  
 [30.08.2024 13:07.17.777] [INFO]  ########################################################
-[30.08.2024 13:07.17.779] [INFO]  Security Now Episode and Shownotes downloader
+[30.08.2024 13:07.17.779] [INFO]  Security Now Episode and Show notes downloader
 [30.08.2024 13:07.17.779] [INFO]  Author: Brenton O'Callaghan (callaghan001)
 [30.08.2024 13:07.17.779] [INFO]  version 1.0.0
 [30.08.2024 13:07.17.779] [INFO]  ########################################################
-[30.08.2024 13:07.17.779] [INFO]  Starting download of SecurityNow episodes from #1 to #20...
+[30.08.2024 13:07.17.779] [INFO]  Starting download of Security Now episodes from #1 to #20...
 [30.08.2024 13:07.21.560] [INFO]                Episode #1 processed
 [30.08.2024 13:07.24.510] [INFO]                Episode #2 processed
 [30.08.2024 13:07.27.463] [INFO]                Episode #3 processed
@@ -55,6 +53,13 @@ The output should look something like this:
 [30.08.2024 13:08.11.734] [INFO]                Episode #18 processed
 [30.08.2024 13:08.14.908] [INFO]                Episode #19 processed
 [30.08.2024 13:08.18.063] [INFO]                Episode #20 processed
-[30.08.2024 13:08.18.063] [INFO]  Downloading of SecurityNow episodes from #1 to #20 is completed.
+[30.08.2024 13:08.18.063] [INFO]  Downloading of Security Now episodes from #1 to #20 is completed.
 
 ```
+
+## Warranties and/or Mis-use
+The author of this code disclaims any liability for damages or losses resulting from its use. The code is provided “as-is” without any warranties, either express or implied, including but not limited to the implied warranties of merchantability and fitness for a particular purpose. Users assume full responsibility for any consequences arising from its use or misuse.
+
+Please note that the purpose of this script is purely fair use and in line with the spirit of the Security Now community and should not be used to abuse / redistribute the content but rather facilitate the use of the downloaded files for personal purposes only.
+
+This script and author are in no way affiated with GRC, Security Now or the TWIT network.
