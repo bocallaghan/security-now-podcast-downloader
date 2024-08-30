@@ -1,3 +1,4 @@
+const path = require('path'); // Import the path module
 const axios = require('axios');
 
 /**
@@ -8,6 +9,27 @@ class WebRequestService {
 
     constructor() {
         console.error("WebRequestService: You do not need to instantiate this class. Please use statically.");
+    }
+
+    /**
+     * Get the user agent header string which comprises of the package name and version.
+     * @returns {String} User agent header string
+     */
+    static getUserAgentString(){
+        
+        var userAgent = ``;
+
+        // We get the package name and version from the NPM package.json file
+        const package_name = require(path.join(process.cwd(),'package.json')).name
+        const version_number = require(path.join(process.cwd(),'package.json')).version
+
+        // Start with the package name (replacing all spaces with dashes)
+        userAgent = package_name.replace(/ /g, '-');
+
+        // Now append the version replacing all dots with dashes
+        userAgent = userAgent + "-" + version_number.replace(/\./g, '-');
+
+        return userAgent;
     }
 
     /**
@@ -44,7 +66,7 @@ class WebRequestService {
             method: 'get',
             url: url,
             headers: {
-                'User-Agent': `twit-securitynow-downloader` 
+                'User-Agent': WebRequestService.getUserAgentString()
             },
             responseType: 'stream'
         })
