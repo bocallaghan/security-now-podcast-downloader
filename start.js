@@ -78,5 +78,14 @@ if (!(isValidNumber(episodeNumber_start) && isValidNumber(episodeNumber_end))) {
     process.exit(2);
 }
 
-// Start the downloader
-main(workingDirectory, episodeNumber_start, episodeNumber_end);
+// Check in case the numbers have been reversed and auto-correct it
+if(episodeNumber_start > episodeNumber_end){
+    console.error(`Your episode numbers appear to be reversed (${episodeNumber_start} is not lower than ${episodeNumber_end})`);
+    console.error(`\tThis app will assume you meant the opposite and continue with the starting episode being #${episodeNumber_end} up as far as episode #${episodeNumber_start}.`);
+    // Start the downloader
+    main(workingDirectory, episodeNumber_end, episodeNumber_start); 
+} else {
+    // Start the downloader
+    main(workingDirectory, episodeNumber_start, episodeNumber_end);
+}
+
